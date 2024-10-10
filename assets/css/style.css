@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* Gaya umum untuk semua perangkat */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Untuk layar dengan lebar lebih dari 1024px (desktop) */
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* Untuk layar dengan lebar antara 600px dan 1024px (tablet) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Untuk layar dengan lebar kurang dari 600px (ponsel) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu {
+    display: block;
+    text-align: center;
+  }
+}
 
 * {
   margin: 0;
